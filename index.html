@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q1 Project</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+	<style>
+		body{
+			font-family: "Poppins", sans-serif ;
+			margin: 0px;
+		}
+
+		header{
+			background-color: #f593d1;
+			height: 55px;
+			display: flex;
+			padding: 15px;
+			justify-content: space-between;
+		}
+
+		nav{
+			font-size: 18px;
+			margin-top: 13px;
+		}
+
+		a{
+			color: white;
+		}
+
+		.logo{
+			width: 55px;
+			height: 55px;
+		}
+
+		.intro{
+			background-color: #f7cde8;
+			height: 300px;
+			padding: 15px;
+			text-align: center;
+			align-content: center;
+		}
+
+		.pfp{
+			width: 125px;
+			height: 175px;
+			border-radius: 100px;
+		}
+
+		h1{
+			font-size: 30px;
+		}
+
+		.name{
+			color: #cf5fa5;
+		}
+
+		h4{
+			font-size: 20px;
+			color: #c979ac;
+		}
+
+		.aboutme{
+			height: 200px;
+			align-content: center;
+			text-align: center;
+			padding: 15px;
+			background-color: #cf5fa5;
+		}
+
+		.aboutme h2{
+			text-align: center;
+			background-color:#f593d1 ;
+			color: white;
+			border-radius: 5px;
+			font-size: 25px;
+			display: inline-block;
+            padding: 3px 30px;
+		}
+
+		p{
+			font-size: 18px;
+			max-width: 650px;
+			text-align: center;
+			margin: auto;
+		}
+
+		.myworks{
+			height: 550px;
+			background-color: #c979ac ;
+			text-align: center;
+			padding: 15px;
+		}
+		.myworks h2{
+			text-align: center;
+			background-color:#f593d1 ;
+			color: white;
+			border-radius: 5px;
+			font-size: 25px;
+			display: inline-block;
+            padding: 3px 30px;
+        }
+
+		.spotify{
+			width: 250px;
+			height: 170px;
+			border: 3px solid white;
+		}
+
+		.spotifyproject h4{
+			text-align: center;
+            margin-top: 5px;
+            font-size: 20px;
+            color: #f7cde8;
+		}
+
+		.myworks ul{
+			 font-size: 18px;
+			 list-style: none;
+		}
+
+		.projectspotify{
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+		}
+
+		.spotifyproject{
+            text-align: center;
+        }
+
+        .movie{
+			width: 250px;
+			height: 170px;
+			border: 3px solid white;
+		}
+
+		.movieproject h4{
+			text-align: center;
+            margin-top: 5px;
+            font-size: 20px;
+            color: #f7cde8;
+		}
+
+		.projectmovie{
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+		}
+
+		.movieproject{
+            text-align: center;
+        }
+
+         .contactme{
+        	min-height: 800px;
+			background-color: #f7cde8;
+			text-align: center;
+			padding: 15px;
+        }
+
+        .contactme h2{
+			text-align: center;
+			background-color:#f593d1 ;
+			color: white;
+			border-radius: 5px;
+			font-size: 25px;
+			display: inline-block;
+            padding: 3px 30px;
+        }
+
+        form{
+        	background-color: white;
+        	border-radius: 10px;
+        	padding: 25px;
+        	margin: 30px auto;
+        	text-align: left;
+        }
+
+        form label{
+        	font-size: 18px;
+        	color: #c979ac;
+        	display: block;
+        	margin-bottom: 5px;
+        	font-weight: 600;
+        }
+
+        form input[type="text"]{
+        	padding: 10px;
+        	border: 2px solid #f593d1;
+        	border-radius: 5px;
+        	font-size: 18px;
+        	box-sizing: border-box;
+        	outline: none;
+        	border-color: #cf5fa5;
+        	width: 100%;
+        }
+        form input[type="email"]{
+        	padding: 10px;
+        	border: 2px solid #f593d1;
+        	border-radius: 5px;
+        	font-size: 18px;
+        	box-sizing: border-box;
+        	outline: none;
+        	width: 100%;
+        	border-color: #cf5fa5;
+        }
+        form select{
+        	padding: 10px;
+        	border: 2px solid #f593d1;
+        	border-radius: 5px;
+        	font-size: 18px;
+        	box-sizing: border-box;
+        	outline: none;
+        	width: 100%;
+        	border-color: #cf5fa5;
+        }
+        form textarea{
+        	padding: 10px;
+        	border: 2px solid #f593d1;
+        	border-radius: 5px;
+        	font-size: 18px;
+        	box-sizing: border-box;
+        	outline: none;
+        	border-color: #cf5fa5;
+        	width: 100%;
+        }
+
+      
+        form h5{
+        	font-size: 20px;
+        	color: #c979ac;
+        	margin: 18px;
+        }
+
+        .radio{
+        	display: flex;
+        	gap: 20px;
+        }
+        .checkbox{
+        	display: flex;
+        	gap: 20px;
+        }
+
+        .radio label{
+        	font-size: 18px;
+        	color: black;
+        	display: inline;
+        	font-weight: normal;
+        }
+        .checkbox label{
+        	font-size: 18px;
+        	color: black;
+        	display: inline;
+        	font-weight: normal;
+        }
+
+        textarea{
+        	height: 100px;
+        }
+
+        button{
+        	display: block;
+        	margin: 20px auto 0;
+        	padding: 10px 30px;
+        	background-color: #f593d1;
+        	color: white;
+        	border: none;
+        	border-radius: 5px;
+        	font-size: 20px;
+        }
+
+
+
+	</style>
+
+</head>
+<body>
+	<header>
+		 <img src="logo.jpeg" class="logo">
+		 <nav>
+		 <a href="#aboutme">about me</a>
+         <a href="#myworks">my works</a>
+         <a href="#contactme">contact me</a>
+		 </nav>
+    </header>
+
+    <div class="intro">
+    	<img src="pfp.png" class="pfp">
+        <h1>hey, i'm <span class="name">tua ysabel mandap 𑣲⋆</span></h1>
+        <h4>i'm an aspiring web developer ⋆˚꩜｡</h4>
+    </div>
+
+    <div id="aboutme" class="aboutme">
+    	<h2>about me ⋆˚꩜.ᐟ </h2>
+    	<p>hey! i'm tua, a student who loves to code <3 i love being creative with my web designs. i enjoy making websites while learning more about html and css.</p>	
+    </div>
+
+    <div id="myworks"class="myworks">
+    	<h2>my works ⋆˚࿔⭑.ᐟ</h2>
+    	<div class="projectspotify">
+    		<div class="spotifyproject">
+    		<img src="spotify.jpg" class="spotify">
+    		<h4>my favorite spotify artists ⋆˚✿˖°</h4>
+    		</div>
+    		<ul>
+              <li>❀ html & css projects</li>
+              <li>❀ lists, links, & images</li>
+              <li>❀ spotify artists</li>
+              <li> <a href="https://github.com/">❀ view github repository </a> </li>
+           </ul>
+           </div>
+
+           <div class="projectmovie">
+    		<div class="movieproject">
+    		<img src="movie.jpg" class="movie">
+    		<h4>my rate a movie form ⋆˚✿˖°</h4>
+    		</div>
+    		<ul>
+              <li>❀ html & css projects</li>
+              <li>❀ htmls forms</li>
+              <li>❀ movie recommendations</li>
+              <li> <a href="https://github.com/">❀ view github repository </a> </li>
+           </ul>
+           </div>
+    </div>
+
+    <div id="contactme" class="contactme">
+    	<h2>contact me ⋆‧°𓏲ּ𝄢</h2>
+    	  <form>
+
+            <label for="name">your name:</label>
+            <input type="text" id="name" name="name" placeholder="enter your name ˙⋆✮">
+            <label for="email">your email:</label>
+            <input type="email" id="email" name="email" placeholder="enter your email ˙⋆✮">
+
+            <h5>how did you find me?</h5>
+
+           <div class="radio">
+          <label> <input type="radio" name="source" value="instagram"> instagram</label>
+          <label> <input type="radio" name="source" value="tiktok"> tiktok </label>
+          <label> <input type="radio" name="source" value="friends"> friends </label> </div>
+
+            <h5>interested in?</h5>
+            <div class="checkbox">
+                <label> <input type="checkbox" id="facebook" name="interest" value="webdesign"> web design </label>
+
+                <label> <input type="checkbox" id="graphicdesign" name="interest" value="graphicdesign"> graphic design </label>
+
+                <label> <input type="checkbox" id="robotics" name="interest" value="robotics"> robotics </label>
+            </div>
+
+
+            <label for="rating">rate my portfolio:</label>
+
+            <select id="rating" name="rating">
+            	<option>pick your rating here˙⋆✮ </option>
+                <option value="5">5 ᨳଓ - excellent</option>
+                <option value="4">4 ᨳଓ - great</option>
+                <option value="3">3 ᨳଓ - good</option>
+                <option value="2">2 ᨳଓ - fair</option>
+                <option value="1">1 ᨳଓ - needs improvement</option>
+                </select>
+
+            
+            <label for="feedback">any feedback?</label>
+            <textarea id="feedback" name="feedback" placeholder="enter your feedback here ˙⋆✮"
+            ></textarea>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+		
+</body>
+</html>
